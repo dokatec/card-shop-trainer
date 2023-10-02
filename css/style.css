@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(91, 8, 136, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem;
+  transition: 0.5s;
+}
+
+.link:hover {
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+.card-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+  gap: 30px;
+}
+.card-img {
+  width: 100%;
+  height: 50%;
+  padding: 10%;
+}
+
+.card {
+  width: 25%;
+  height: 30rem;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  transition: 0.5s;
+}
+
+.card:hover {
+  box-shadow: 5px 5px #e5cff7;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin: 10% 0;
+}
+
+.card-text {
+  margin: 8% 0;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #9d76c1;
+  color: #fff;
+  padding: 10px 100px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+.card-group_compra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-compra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 0 10%;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.card-img_compra {
+  width: 20%;
+  height: auto;
+}
+
+.card-compra_texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.compra-titulo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.compra-texto {
+  margin: 2% 0;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 576px) {
+  .card-group {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+    height: 40rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+  }
+}
